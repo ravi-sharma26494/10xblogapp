@@ -1,7 +1,12 @@
 import React from 'react'
+import '../App.css'
+import Navbar from './Navbar'
+
 
 const Home = () => {
   return (
+    <>
+    <Navbar></Navbar>
     <div className='home__container'>
         <div className='title__section'>
             <h2>This is Title</h2>
@@ -16,6 +21,7 @@ const Home = () => {
             <p>Image Here</p>
         </div>
     </div>
+    </>
   )
 }
 
