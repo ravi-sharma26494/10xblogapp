@@ -16,7 +16,7 @@ const registerUser = asyncHandler ( async(req, res)=>{
     }
     if(password.length < 8 ){
         res.status(400)
-        throw new Error("Paaword must have at leaset 8 characters");
+        throw new Error("Password must have at leaset 8 characters");
     }
     if(password != confirmpassword){
         res.status(400)

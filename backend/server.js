@@ -13,10 +13,12 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
 app.use(bodyParser.json());
+app.use(cors())
 
 //routes
-app.use("/ap/users",userRoute)
-app.get('/', (req, res)=>{
+app.use("/api/users",userRoute)
+app.get('/comehere', (req, res)=>{
+    console.log("comehere")
     res.send("Hello")
 })
 
